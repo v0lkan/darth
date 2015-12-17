@@ -12,8 +12,6 @@
 
 var matrix = require( 'array-matrix') ;
 
-module.exports = chart;
-
 function padMe(str, n) {
     var linew = str.split( '\n' )[ 0 ].length;
     var line = Array( linew ).join(' ') + '\n';
@@ -124,4 +122,4 @@ function max( data ) {
     return n;
 }
 
-exports.chart = chart;
+module.exports = chart;

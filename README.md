@@ -11,3 +11,25 @@
                        Until then…
                 May the source be with you.
 ```
+
+## Usage Example
+
+```javascript
+import chart from 'darth';
+import clear from 'clear';
+
+let data = [];
+
+for ( i = 0; i < 100; i++ ) {
+    data.push( Math.random() * 100 );
+}
+
+setInterval( () => {
+    data.push( Math.random() * 100 );
+
+    clear();
+    chart( data );
+}, 1000 );
+```
+
+// TODO: add a screenshot of the output.
